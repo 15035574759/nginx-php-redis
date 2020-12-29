@@ -85,6 +85,14 @@ mysql: /etc/init.d/mysqld start {start|stop|restart|reload|status|configtest|for
 /usr/local/mysql/error.log
 ```
 
+### 数据卷位置(DB)
+```
+# mysql
+/data/mysql/data
+# redis
+/usr/local/redis/data
+```
+
 ### PHP扩展(PHP extension)
 ```
 # 默认已安装部分扩展在目录：/usr/local/php/lib/php/extensions/no-debug-non-zts-20151012
