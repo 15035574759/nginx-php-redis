@@ -4,7 +4,7 @@
 FROM centos:7
 
 # 添加安装包文件
-ADD ./soft/mysql-5.6.48.tar.gz /home/soft/mysql-5.6.48.tar.gz
+ADD ./soft/mysql-5.6.48.tar.gz /home/soft/
 
 #维护者
 MAINTAINER qinlh@outlook.com
