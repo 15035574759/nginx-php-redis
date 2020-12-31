@@ -25,11 +25,11 @@ services:
           - /nginx-php-redis-mysql/docker-compose/log/redis/redis.log:/var/log/redis/redis.log
           - /etc/localtime:/etc/localtime:ro
         # command: /usr/sbin/init
-        command: 
-          - /bin/bash
-          - -c
-          - |
-            ./entrypoint.sh
+        # command: 
+        #   - /bin/bash
+        #   - -c
+        #   - |
+        #     ./entrypoint.sh
         stdin_open: true
         tty: true
     mysql56:
@@ -45,10 +45,10 @@ services:
             - /nginx-php-redis-mysql/docker-compose/etc/mysql/my.cnf:/etc/my.cnf:ro
             - /nginx-php-redis-mysql/docker-compose/log/mysql/error.log:/usr/local/mysql/error.log
             - /etc/localtime:/etc/localtime:ro
-          command: 
-            - /bin/bash
-            - -c
-            - |
-              ./entrypoint.sh
+          # command: 
+          #   - /bin/bash
+          #   - -c
+          #   - |
+          #     ./entrypoint.sh
           stdin_open: true
           tty: true

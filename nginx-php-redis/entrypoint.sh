@@ -3,13 +3,13 @@ set -e
 
 echo `service nginx status`
 echo '1.启动nginx....'
-/etc/init.d/nginx restart
+/etc/init.d/nginx restart &
 sleep 3
 echo `service nginx status`
 
 echo `service php-fpm status`
 echo '2.启动php-fpm....'
-/etc/init.d/php-fpm restart
+/etc/init.d/php-fpm restart &
 sleep 3
 echo `service php-fpm status`
 
