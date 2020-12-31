@@ -118,3 +118,4 @@ RUN chmod 777 ./entrypoint.sh
 
 # 容器启动时执行指令
 ENTRYPOINT ["./entrypoint.sh"]
+CMD ["-D"]
